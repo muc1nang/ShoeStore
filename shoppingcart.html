@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Shoes Store - Shopping Cart</title>
+<meta name="keywords" content="shoes store" />
+<meta name="description" content="Shopping Cart" />
+<link href="shop_style.css" rel="stylesheet" type="text/css" />
+
+<link rel="stylesheet" type="text/css" href="css/ddsmoothmenu.css" />
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/ddsmoothmenu.js">
+</script>
+
+<script type="text/javascript">
+
+ddsmoothmenu.init({
+	mainmenuid: "top_nav", 
+	orientation: 'h', 
+	classname: 'ddsmoothmenu',
+	contentsource: "markup" 
+})
+
+</script>
+
+</head>
+
+<body>
+
+<div id="shop_body_wrapper">
+<div id="shop_wrapper">
+
+	<div id="shop_header">
+    	<div id="site_title"><h1><a href="index.html">Online Shoes Store</a></h1></div>
+        <div id="header_right">
+        	<p>
+	        <a href="#">Tài khoản</a> | <a href="#">Khuyến mãi</a> | <a href="shoppingcart.html">Giỏ hàng</a> | <a href="checkout.html">Thanh toán</a> | <a href="#">Đăng nhập</a></p>
+            <p>
+            	Giỏ hàng: <strong>3 sản phẩm</strong> ( <a href="shoppingcart.html">Hiển thị</a> )
+			</p>
+		</div>
+        <div class="cleaner"></div>
+    </div> 
+    <div id="shop_menubar">
+    	<div id="top_nav" class="ddsmoothmenu">
+            <ul>
+                <li><a href="index.html" class="selected">Trang chủ</a></li>
+                <li><a href="#">Sản phẩm</a>
+                   <ul>
+                        <li><a href="#">Sản phẩm bán chạy</a></li>
+                        <li><a href="#">Khuyến mãi</a></li>
+                  </ul>
+                </li>
+                <li><a href="#">Giới thiệu</a>
+                    
+                </li>
+                <li><a href="#">FAQs</a></li>
+                <li><a href="checkout.html">Thanh toán</a></li>
+                <li><a href="contact.html">Liên hệ</a></li>
+            </ul>
+            <br style="clear: left" />
+        </div> 
+        <div id="shop_search">
+            <form action="#" method="get">
+              <input type="text" value=" " name="keyword" id="keyword" title="keyword" onfocus="clearText(this)" onblur="clearText(this)" class="txt_field" />
+              <input type="submit" name="Search" value=" " alt="Search" id="searchbutton" title="Search" class="sub_btn"  />
+            </form>
+        </div>
+    </div>
+    
+    <div id="shop_main">
+    	<div id="sidebar" class="float_l">
+        	<div class="sidebar_box"><span class="bottom"></span>
+            	<h3>Danh mục</h3>   
+                <div class="content"> 
+                	<ul class="sidebar_list">
+                    	<li class="first"><a href="#">Giày nam</a></li>
+                        <li><a href="#">Giày nữ</a></li>
+                        <li><a href="#">Giày thể thao</a></li>
+                        <li><a href="#">Giày da</a></li>
+                        <li><a href="#">Giày cao gót</a></li>
+                        <li class="last"><a href="#">Giày công sở</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+        </div>
+        <div id="content" class="float_r">
+        	<h1>Giỏ hàng</h1>
+        	<table width="680px" cellspacing="0" cellpadding="5">
+                   	  <tr bgcolor="#ddd">
+                        	<th width="220" align="left">Ảnh </th> 
+                        	<th width="180" align="left">Loại </th> 
+                       	  	<th width="100" align="center">Số lượng </th> 
+                        	<th width="60" align="right">Giá </th> 
+                        	<th width="60" align="right">Tổng </th> 
+                        	<th width="90"> </th>
+                            
+                      </tr>
+                    	<tr>
+                        	<td><img src="images/product/1.jpg" alt="image 1" /></td> 
+                        	<td>Giày thể thao Vans Old Skool SF</td> 
+                            <td align="center"><input type="text" value="1" style="width: 20px; text-align: right" /> </td>
+                            <td align="right">250.000đ </td> 
+                            <td align="right">250.000đ </td>
+                            <td align="center"> <a href="#"><img src="images/remove_x.gif" alt="remove" /><br />Bỏ</a> </td>
+						</tr>
+                        <tr>
+                        	<td><img src="images/product/2.jpg" alt="image 2" width="200"/> </td>
+                            <td>Giày thể thao Xsport Boost Ultra
+
+</td> 
+                       	  	<td align="center"><input type="text" value="1" style="width: 20px; text-align: right" />  </td>
+                            <td align="right">160.000đ  </td>
+                            <td align="right">160.000đ </td>
+                            <td align="center"> <a href="#"><img src="images/remove_x.gif" alt="remove" /><br />Bỏ</a>  </td>
+						</tr>
+                        <tr>
+                        	<td><img src="images/product/3.jpg" alt="image 3"  width="200"/> </td>
+                            <td>Giày thể thao XSPORT CRO</td> 
+                       	  	<td align="center"><input type="text" value="1" style="width: 20px; text-align: right" />  </td>
+                            <td align="right">200.000đ  </td>
+                            <td align="right">200.000đ </td>
+                            <td align="center"> <a href="#"><img src="images/remove_x.gif" alt="remove" /><br />Bỏ</a>  </td>
+						</tr>
+                        <tr>
+                        	<td colspan="3" align="right"  height="30px"> <a href="shoppingcart.html">ấn vào đây để <strong>Cập nhật</strong></a>&nbsp;&nbsp;</td>
+                            <td align="right" style="background:#ddd; font-weight:bold"> Tổng cộng </td>
+                            <td align="right" style="background:#ddd; font-weight:bold">$610.000đ </td>
+                            <td style="background:#ddd; font-weight:bold"> </td>
+						</tr>
+					</table>
+                    <div style="float:right; width: 215px; margin-top: 20px;">
+                    
+					<p><a href="checkout.html">Thanh toán</a></p>
+                    <p><a href="javascript:history.back()">Tiếp tục mua</a></p>
+                    	
+                    </div>
+			</div>
+        <div class="cleaner"></div>
+    </div>
+    <div id="shop_footer">
+    <p><a href="index.html">Trang chủ</a> | <a href="products.html">Sản phẩm</a> | <a href="#">Giới thiệu</a> | <a href="#">FAQs</a> | <a href="#">Liên hệ</a>
+		</p>
+    </div> 
+</div> 
+</div>
+</body>
+</html>

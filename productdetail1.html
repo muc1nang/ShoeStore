@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Shoes Store - Chi tiết sản phẩm</title>
+<meta name="keywords" content="shoes store" />
+<meta name="description" content="Shoes Store" />
+<link href="shop_style.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" type="text/css" href="css/ddsmoothmenu.css" />
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/ddsmoothmenu.js">
+</script>
+<script type="text/javascript">
+
+ddsmoothmenu.init({
+	mainmenuid: "top_nav", 
+	orientation: 'h', 
+	classname: 'ddsmoothmenu', 
+	contentsource: "markup" 
+})
+
+</script>
+<script type="text/javascript" src="js/jquery-1-4-2.min.js"></script> 
+<link rel="stylesheet" href="css/slimbox2.css" type="text/css" media="screen" /> 
+<script type="text/JavaScript" src="js/slimbox2.js"></script> 
+
+</head>
+
+<body>
+
+<div id="shop_body_wrapper">
+<div id="shop_wrapper">
+
+	<div id="shop_header">
+    	<div id="site_title"><h1><a href="http://www.shoeshop.com">Online Shoes Store</a></h1></div>
+        <div id="header_right">
+        	<p>
+	        <a href="#">Tài khoản</a> | <a href="#">Khuyến mãi</a> | <a href="shoppingcart.html">Giỏ hàng</a> | <a href="checkout.html">Thanh toán</a> | <a href="#">Đăng nhập</a></p>
+            <p>
+            	Giỏ hàng: <strong>3 sản phẩm</strong> ( <a href="shoppingcart.html">Hiển thị</a> )
+			</p>
+		</div>
+        <div class="cleaner"></div>
+    </div> 
+    
+	
+   <div id="shop_menubar">
+    	<div id="top_nav" class="ddsmoothmenu">
+             <ul>
+                <li><a href="index.html" class="selected">Trang chủ</a></li>
+                <li><a href="#">Sản phẩm</a>
+                    <ul>
+                        <li><a href="#">Sản phẩm bán chạy</a></li>
+                        <li><a href="#">Khuyến mãi</a></li>
+                  </ul>
+                </li>
+                <li><a href="#">Giới thiệu</a>
+                </li>
+                <li><a href="#">FAQs</a></li>
+                <li><a href="checkout.html">Thanh toán</a></li>
+                <li><a href="contact.html">Liên hệ</a></li>
+            </ul>
+            <br style="clear: left" />
+        </div>
+        <div id="shop_search">
+            <form action="#" method="get">
+              <input type="text" value=" " name="keyword" id="keyword" title="keyword" onfocus="clearText(this)" onblur="clearText(this)" class="txt_field" />
+              <input type="submit" name="Search" value=" " alt="Search" id="searchbutton" title="Search" class="sub_btn"  />
+            </form>
+        </div>
+    </div> <!-- kthuc menubar -->
+    
+    <div id="shop_main"><div id="sidebar" class="float_l">
+        	<div class="sidebar_box"><span class="bottom"></span>
+            	<h3>Danh mục</h3>   
+                <div class="content"> 
+                	<ul class="sidebar_list">
+                    	<li class="first"><a href="#">Giày nam</a></li>
+                        <li><a href="#">Giày nữ</a></li>
+                        <li><a href="#">Giày thể thao</a></li>
+                        <li><a href="#">Giày da</a></li>
+                        <li><a href="#">Giày cao gót</a></li>
+                        <li class="last"><a href="#">Giày công sở</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="sidebar_box"><span class="bottom"></span>
+            	<h3>Sản phẩm bán chạy </h3>   
+                <div class="content"> 
+                	<div class="bs_box">
+                    	<a href="productdetail.html"><img src="images/product/1.jpg" width="60px" height="60px" alt="image" /></a>
+                        <h4><a href="productdetail.html">Vans Old Skool SF</a></h4>
+                        <p class="price">250.000đ</p>
+                        <div class="cleaner"></div>
+                    </div>
+                    <div class="bs_box">
+                    	<a href="productdetail3.html"><img src="images/product/4.jpg" alt="image" width="60px" height="60px"/></a>
+                        <h4><a href="productdetail3.html">FILA Disruptor</a></h4>
+                        <p class="price">550.000đ</p>
+                        <div class="cleaner"></div>
+                    </div>
+                    <div class="bs_box">
+                    	<a href="productdetail2.html"><img src="images/product/3.jpg" alt="image" width="60px" height="60px"/></a>
+                        <h4><a href="productdetail2.html">XSPORT CRO</a></h4>
+                        <p class="price">200.000đ</p>
+                        <div class="cleaner"></div>
+                    </div>
+                    <div class="bs_box">
+                    	<a href="#"><img src="images/product/5.jpg" alt="image" width="60px" height="60px"/></a>
+                        <h4><a href="#">XSPORT R2</a></h4>
+                        <p class="price">175.000đ</p>
+                        <div class="cleaner"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+<div id="content" class="float_r">
+   	    <h1>Chi tiết sản phẩm</h1>
+            <div class="content_half float_l">
+        	<a  rel="lightbox[portfolio]" href="images/product/2_l.jpg"><img src="images/product/2.jpg" width="200" height="150" /></a>
+            </div>
+            <div class="content_half float_r">
+                <table>
+                    <tr>
+                        <td>Model:</td>
+                        <td style="font-weight: bold">XSPORT Boost Ultra</td>
+                    </tr>
+                    <tr>
+                        <td width="160">Giá:</td>
+                        <td>160.000đ</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>Xuất sứ:</td>
+                        <td>Trung Quốc</td>
+                    </tr>
+                    <tr>
+                    	<td>Số Lượng:</td>
+                        <td><input type="text" value="1" style="width: 20px; text-align: right" /></td>
+                    </tr>
+                </table>
+                <div class="cleaner h20"></div>
+
+                <a href="shoppingcart.html" class="addtocart"></a>
+
+			</div>
+            <div class="cleaner h30"></div>
+            
+            <h5>Giới thiệu sản phẩm</h5>
+            <p>Chất liệu cao cấp, bền đẹp theo thời gian. Thiết kế thời trang. Kiểu dáng phong cách. Độ bền cao. Dễ phối đồ.<br>
+			Độ đàn hồi, co dãn tốt, ôm khít vừa chân.		
+	</p>	
+            
+          <div class="cleaner h50"></div>
+            
+            <h3>Sản phẩm liên quan</h3>
+        	<div class="product_box">
+            	<a href="productdetail.html"><img src="images/product/1.jpg" alt="" /></a>
+                <h3>Giày thể thao Vans Old Skool SF</h3>
+                <p class="product_price">250.000đ</p>
+                <a href="shoppingcart.html" class="addtocart"></a>
+                <a href="productdetail.html" class="detail"></a>
+            </div>        	
+            <div class="product_box">
+            	<a href="productdetail3.html"><img src="images/product/4.jpg" alt="" width="200"/></a>
+                <h3>Giày thể thao FILLA Disruptor</h3>
+                <p class="product_price">550.000đ</p>
+                <a href="shoppingcart.html" class="addtocart"></a>
+                <a href="productdetail3.html" class="detail"></a>
+            </div>        	
+            <div class="product_box no_margin_right">
+            	<a href="#"><img src="images/product/5.jpg" alt=""  width="200"/></a>
+                <h3> Giày thể thao XSPORT R2</h3>
+                <p class="product_price">200.000đ</p>
+                <a href="shoppingcart.html" class="addtocart"></a>
+                <a href="#" class="detail"></a>
+            </div>     
+      </div> 
+        <div class="cleaner"></div>
+    </div> 
+    
+    <div id="shop_footer">
+    	<p><a href="#">Trang chủ</a> | <a href="#">Sản phẩm</a> | <a href="#">Giới thiệu</a> | <a href="#">FAQs</a> | <a href="#">Liên hệ</a>
+		</p>
+    	
+    </div> 
+    
+</div> 
+</div>
+
+</body>
+</html>

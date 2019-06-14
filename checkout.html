@@ -1,0 +1,185 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Shoes Store</title>
+<meta name="keywords" content="shoes store" />
+<meta name="description" content="Shoes Store" />
+<link href="shop_style.css" rel="stylesheet" type="text/css" />
+
+<link rel="stylesheet" href="nivo-slider.css" type="text/css" media="screen" />
+
+<link rel="stylesheet" type="text/css" href="css/ddsmoothmenu.css" />
+	
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/ddsmoothmenu.js">
+
+
+
+</script>
+
+<script type="text/javascript">
+
+ddsmoothmenu.init({
+	mainmenuid: "top_nav", 
+	orientation: 'h',
+	classname: 'ddsmoothmenu',
+	contentsource: "markup" 
+})
+
+</script>
+
+</head>
+
+<body>
+
+<div id="shop_body_wrapper">
+<div id="shop_wrapper">
+
+	<div id="shop_header">
+    	<div id="site_title"><h1><a href="index.html">Online Shoes Store</a></h1></div>
+        <div id="header_right">
+        	<p>
+	        <a href="#">Tài khoản</a> | <a href="#">Khuyến mãi</a> | <a href="#">Giỏ hàng</a> | <a href="#">Thanh toán</a> | <a href="#">Đăng nhập</a></p>
+            <p>
+            	Giỏ hàng: <strong>3 sản phẩm</strong> ( <a href="shoppingcart.html">Hiển thị</a> )
+			</p>
+		</div>
+        <div class="cleaner"></div>
+    </div> 
+    
+    <div id="shop_menubar">
+    	<div id="top_nav" class="ddsmoothmenu">
+            <ul>
+                <li><a href="index.html" class="selected">Trang chủ</a></li>
+                <li><a href="#">Sản phẩm</a>
+                    <ul>
+                        <li><a href="#">Sản phẩm bán chạy</a></li>
+                        <li><a href="#">Khuyến mãi</a></li>
+                  </ul>
+                </li>
+                <li><a href="#">Giới thiệu</a>
+                </li>
+                <li><a href="#">FAQs</a></li>
+                <li><a href="checkout.html">Thanh toán</a></li>
+                <li><a href="contact.html">Liên hệ</a></li>
+            </ul>
+            <br style="clear: left" />
+        </div> <!-- kthuc menubar -->
+        <div id="shop_search">
+            <form action="#" method="get">
+              <input type="text" value=" " name="keyword" id="keyword" title="keyword" onfocus="clearText(this)" onblur="clearText(this)" class="txt_field" />
+              <input type="submit" name="Search" value=" " alt="Search" id="searchbutton" title="Search" class="sub_btn"  />
+            </form>
+        </div>
+    </div> 
+    
+    <div id="shop_main">
+    	<div id="sidebar" class="float_l">
+        	<div class="sidebar_box"><span class="bottom"></span>
+            	<h3>Danh mục</h3>   
+                <div class="content"> 
+                	<ul class="sidebar_list">
+                    	<li class="first"><a href="#">Giày nam</a></li>
+                        <li><a href="#">Giày nữ</a></li>
+                        <li><a href="#">Giày thể thao</a></li>
+                        <li><a href="#">Giày da</a></li>
+                        <li><a href="#">Giày cao gót</a></li>
+                        <li class="last"><a href="#">Giày công sở</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="sidebar_box"><span class="bottom"></span>
+            	<h3>Sản phẩm bán chạy </h3>   
+                <div class="content"> 
+                	<div class="bs_box">
+                    	<a href="#"><img src="images/product/1.jpg" width="60px" height="60px" alt="image" /></a>
+                        <h4><a href="#">Vans Old Skool SF</a></h4>
+                        <p class="price">250.000đ</p>
+                        <div class="cleaner"></div>
+                    </div>
+                    <div class="bs_box">
+                    	<a href="#"><img src="images/product/4.jpg" alt="image" width="60px" height="60px"/></a>
+                        <h4><a href="#">FILA Disruptor</a></h4>
+                        <p class="price">550.000đ</p>
+                        <div class="cleaner"></div>
+                    </div>
+                    <div class="bs_box">
+                    	<a href="#"><img src="images/product/3.jpg" alt="image" width="60px" height="60px"/></a>
+                        <h4><a href="#">XSPORT CRO</a></h4>
+                        <p class="price">200.000đ</p>
+                        <div class="cleaner"></div>
+                    </div>
+                    <div class="bs_box">
+                    	<a href="#"><img src="images/product/5.jpg" alt="image" width="60px" height="60px"/></a>
+                        <h4><a href="#">XSPORT R2</a></h4>
+                        <p class="price">175.000đ</p>
+                        <div class="cleaner"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="content" class="float_r">
+        	<h2>THANH TOÁN</h2>
+            <h5><strong>Thông tin hóa đơn</strong></h5>
+            <div class="content_half float_l checkout">
+				Họ tên đầy đủ:  
+                  <input type="text"  style="width:300px;"  />
+                <br />
+                <br />
+              Địa chỉ:
+				<input type="text"  style="width:300px;"  />
+                <br />
+                <br />
+              Thành phố:
+                <input type="text"  style="width:300px;"  />
+                <br />
+                <br />
+                Tỉnh:
+                <input type="text"  style="width:300px;"  />
+            </div>
+            
+            <div class="content_half float_r checkout">
+            	E-MAIL
+				<input type="text"  style="width:300px;"  />
+                <br />
+                <br />
+          Số Điện thoại<br />
+				<span style="font-size:10px">vui lòng nhập số điện thoại thực của bạn.</span>
+                <input type="text"  style="width:300px;"  />
+            </div>
+            
+            <div class="cleaner h50"></div>
+            <h3>GIỎ HÀNG</h3>
+            <h4>Tổng số tiền: <strong>610.000đ</strong></h4>
+            <p><input type="checkbox" />
+			Tôi chấp nhận <a href="#">điều khoản</a> của trang web.</p>
+            <table style="border:1px solid #CCCCCC;" width="100%">
+                <tr>
+                    <td height="80px"> <img src="images/logo_paypal.png" width="150"></td>
+                    <td width="400px;" style="padding: 0px 20px;">Thanh toán qua Paypal
+                    </td>
+                    <td><a href="#" class="more">PAYPAL</a></td>
+                </tr>
+                <tr>
+                    <td  height="80px"><img src="images/logo-momo.png" width="100" alt="momo" />
+                    
+					</td>
+                    <td  width="400px;" style="padding: 0px 20px;">Thanh toán qua vid điện tử momo</td>
+                    <td><a href="#" class="more">MOMO</a></td>
+                </tr>
+            </table>
+        </div> 
+        <div class="cleaner"></div>
+    </div> 
+    
+    <div id="shop_footer">
+    	<p><a href="#">Trang chủ</a> | <a href="#">Sản phẩm</a> | <a href="#">Giới thiệu</a> | <a href="#">FAQs</a> | <a href="#">Liên hệ</a>
+		</p>
+    </div> 
+    
+</div> 
+</div> 
+
+</body>
+</html>
